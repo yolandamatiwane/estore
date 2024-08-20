@@ -25,7 +25,7 @@ class Products {
     recentProducts(req, res) {
         try {
             const strQry = `
-            SELECT productID, prodName, category, prodDesc, prodURL, amount
+            SELECT prodID, prodName, category, prodDesc, prodURL, amount
             FROM products
             ORDER BY prodID DESC
             LIMIT 5;
